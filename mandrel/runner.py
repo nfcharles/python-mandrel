@@ -5,6 +5,7 @@ import sys
 class AbstractRunner(object):
     def __init__(self):
         parser = self.initialize_parser()
+        parser.disable_interspersed_args()
         self.configure_parser(parser)
         self.parser = parser
 
